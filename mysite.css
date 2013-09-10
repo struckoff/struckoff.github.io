@@ -1,49 +1,43 @@
 H1 {
-	  color: #a50000;
-	    font-size: 20pt;
-	      font-family: Jura;
-	        
-	}
+    color: #a50000;
+    font-size: 20pt;
+    font-family: Jura;
+   }
 
 
 
 
 
-  Px
-         {
-          color: #BA0000;
-        font-family: Jura;
-        font-size: 14pt;
-	 padding-left: 5%;
+Px{
+   color: #BA0000;
+   font-family: Jura;
+   font-size: 14pt;
+   padding-left: 5%;
+  }
 
-        }
-
-  html{
-      background: url(bg.jpg) no-repeat center center fixed; 
+html{
+     background: url(bg.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	    -o-background-size: cover;
 	      background-size: cover;
 
-       padding-top: 10%;
-      
-      
-       color: white;
-      }
+      padding-top: 10%;
+      color: white;
+     }
 
- .box {
-	   #width: 0;
-	     padding: 10px;
-	       border: 1px solid ;
-	      border-color: rgba(41, 45, 42, 0.5);
-      	       margin: 10px;
-		 box-shadow: 0 0 3px rgba(0,0,0,0.5);
-		 background: rgba(0,0,0,0.7);
-	 }
-  .link {
-	  
-	  color: white;
-          font-family :Jura;
-	  font-size: 13pt;
-        }
+.box {
+      #width: 0;
+      padding: 10px;
+      border: 1px solid ;
+      border-color: rgba(41, 45, 42, 0.5);
+      margin: 10px;
+      box-shadow: 0 0 3px rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.7);
+     }
+.link {
+       color: white;
+       font-family :Jura;
+       font-size: 13pt;
+      }
 
