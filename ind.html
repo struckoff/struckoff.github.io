@@ -11,14 +11,15 @@
      
    
     	 
-var hash = $.getJSON('quest.json',function (data){
-		return $.each( data, function( key, val ) {
+$.getJSON('quest.json',function (data){
+		var hash =  $.each( data, function( key, val ) {
             var funs = new Object();
 			funs[key] = val;
 			console.log(funs["plus"]);
 			return funs;
 			});
      //eval ("this.plus = " + funs["plus"])
+  console.log(hash["plus"]);
   });
   console.log(hash["plus"]);
        function Calc(){
