@@ -11,7 +11,7 @@
      
    var take = new Object();
     	 
-take $.getJSON('quest.json',function (data){
+take =  $.getJSON('quest.json',function (data){
 		var hash =  $.each( data, function( key, val ) {
             var funs = new Object();
 			funs[key] = val;
