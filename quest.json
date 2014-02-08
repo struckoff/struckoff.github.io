@@ -1,4 +1,4 @@
 {
-  "plus":"function(a,b){return (a + b)}"
-  "test":"function(a,b){return a}"
+  "plus":"function(a,b){return (a + b)}",
+  "test":"function(a,b){return a}",
 }
