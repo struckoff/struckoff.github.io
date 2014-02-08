@@ -28,14 +28,14 @@ $.getJSON('quest.json',function (data){
 var strcpy = strfun;     
      
      
-     function Calc(str){
-         eval("var items = {"+str+"}");
+     function Calc(stri){
+        eval("var items = {"+stri+"}");
         eval("this.plus =" + items["plus"])
          console.log(str)
          //this.plus = function(a,b){return a - b;}
 
      }
-     var Calc1 = new Calc(hash);
+     var Calc1 = new Calc(strfun);
      console.log(Calc1.plus(6,1))
      //console.log(Calc1.mult(6,3))
    </script>
