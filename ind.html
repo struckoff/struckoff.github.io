@@ -28,10 +28,10 @@ $.getJSON('quest.json',function (data){
 var strcpy = strfun;     
      
      
-     function Calc(ha){
-         eval("var items = {"+strfun+"}");
-        eval("this.plus =" + ha["plus"])
-         console.log(hash)
+     function Calc(str){
+         eval("var items = {"+str+"}");
+        eval("this.plus =" + items["plus"])
+         console.log(str)
          //this.plus = function(a,b){return a - b;}
 
      }
