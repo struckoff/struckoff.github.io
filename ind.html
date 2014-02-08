@@ -15,15 +15,15 @@
 		$.each( data, function( key, val ) {
            var funs = [];	 
 			 funs[key] = val;
-           return funs;
+         
 			console.log(funs["plus"]);
-			
+			  return funs;
 			});
      //eval ("this.plus = " + funs["plus"])
   });
   console.log(hash["plus"]);
        
-       eval("this.plus =" + funs["plus"])
+       eval("this.plus =" + hash["plus"])
        //this.test = function(a,b){return (a + b)}
 
      }
