@@ -26,12 +26,12 @@ $.getJSON('quest.json',function (data){
   				});
      //console.log(take["plus"]);
 var strcpy = strfun;     
+     var q = 1; 
      
-     
-     function Calc(stri){
+     function Calc(){
         eval("var items = {"+stri+"}");
-        eval("this.plus =" + items["plus"])
-         console.log(stri)
+        eval("this.plus =" + hash["plus"])
+         console.log(q)
          //this.plus = function(a,b){return a - b;}
 
      }
