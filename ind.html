@@ -11,7 +11,7 @@
      
      //var take = new Object();
     	 
-var take =  $.getJSON('quest.json',function (data){
+$.getJSON('quest.json',function (data){
 				var hash =  $.each( data, function( key, val ) {
             			var funs = new Object();
 						funs[key] = val;
@@ -20,11 +20,11 @@ var take =  $.getJSON('quest.json',function (data){
 						});
      //eval ("this.plus = " + funs["plus"])
   				console.log(hash["plus"]);
-  				return hash['plus'];
+  				eval("Calc.plus =" + hash["plus"])
   				});
   console.log(take["plus"]);
        function Calc(){
-       eval("this.plus =" + take["plus"])
+         //eval("this.plus =" + take["plus"])
        //this.test = function(a,b){return (a + b)}
 
      }
