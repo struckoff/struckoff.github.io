@@ -9,18 +9,20 @@
    <script type="text/javascript">
      //var func0 = "function(a,b){return a * b}";
      
-   
-     //funs = [];	 
-	$.getJSON('quest.json',function (data){
+   function Calc(){
+   var hash[]
+	hash = $.getJSON('quest.json',function (data){
 		$.each( data, function( key, val ) {
-			funs[key] = val;
+           var funs = [];	 
+			 funs[key] = val;
+           return funs;
 			console.log(funs["plus"]);
 			
 			});
      //eval ("this.plus = " + funs["plus"])
   });
-  console.log(funs["plus"]);
-       function Calc(){
+  console.log(hash["plus"]);
+       
        eval("this.plus =" + funs["plus"])
        //this.test = function(a,b){return (a + b)}
 
