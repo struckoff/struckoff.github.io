@@ -13,7 +13,7 @@
 	var funs = [];	 
 	$.getJSON('quest.json',function (data){
 		$.each( data, function( key, val ) {
-			var funs[key] = val;
+			funs[key] = val;
 			console.log(funs["plus"]);
 			
 			});
