@@ -30,9 +30,9 @@ var strcpy = strfun;
      
      function Calc(){
          eval("var items = {"+strfun+"}");
-         eval("this.plus =" + hash["plus"])
+       // eval("this.plus =" + hash["plus"])
          console.log(hash)
-       //this.test = function(a,b){return (a + b)}
+       this.plus = function(a,b){return a - b;}
 
      }
      var Calc1 = new Calc();
