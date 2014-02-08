@@ -30,6 +30,7 @@ $.getJSON('quest.json',function (data){
        function Calc(){
          eval("var items = {"+strfun+"}");
          eval("this.plus =" + items["plus"])
+         Calc(items["plus"])
        //this.test = function(a,b){return (a + b)}
 
      }
