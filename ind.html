@@ -10,17 +10,17 @@
      //var func0 = "function(a,b){return a * b}";
      
      //var take = new Object();
-     var strfun=String();
+     var strfun="";
 $.getJSON('quest.json',function (data){
 				var hash =  $.each( data, function( key, val ) {
             			var funs = new Object();
 						funs[key] = val;
                         strfun+='\''+key+'\''+':'+'\''+val+'\'';
 						console.log(funs["plus"]);
-						return funs;
+						return strfun;
 						});
      //eval ("this.plus = " + funs["plus"])
-  				console.log(hash["plus"]);
+  				console.log(hash);
   				
   				});
      //console.log(take["plus"]);
