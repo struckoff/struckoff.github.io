@@ -8,20 +8,23 @@
  <body>
    <script type="text/javascript">
      //var func0 = "function(a,b){return a * b}";
+     
+     function Calc(){
+       
+       //this.test = function(a,b){return (a + b)}
+
+     }
 	var funs = [];	 
 	$.getJSON('quest.json',function (data){
 		$.each( data, function( key, val ) {
 			funs[key] = val;
 			console.log(funs["plus"]);
+			Calc.plus = eval (funs["plus"])
 			});
      //eval ("this.plus = " + funs["plus"])
   });
   console.log(funs["plus"]);
-     function Calc(){
-       this.plus = eval (funs["plus"])
-       //this.test = function(a,b){return (a + b)}
-
-     }
+     
      var Calc1 = new Calc();
      console.log(Calc1.plus(6,1))
      //console.log(Calc1.mult(6,3))
