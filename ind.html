@@ -9,21 +9,20 @@
    <script type="text/javascript">
      //var func0 = "function(a,b){return a * b}";
      
-   function Calc(){
-   var hash = []
-	hash = $.getJSON('quest.json',function (data){
-		$.each( data, function( key, val ) {
-           var funs = [];	 
-			 funs[key] = val;
-         
+   
+    	 
+var hash = $.getJSON('quest.json',function (data){
+		return $.each( data, function( key, val ) {
+            var funs = new Object();
+			funs[key] = val;
 			console.log(funs["plus"]);
-			  return funs;
+			return funs;
 			});
      //eval ("this.plus = " + funs["plus"])
   });
-  console.log(hash["plus"]);
-       
-       eval("this.plus =" + hash["plus"])
+  console.log(funs["plus"]);
+       function Calc(){
+       eval("this.plus =" + funs["plus"])
        //this.test = function(a,b){return (a + b)}
 
      }
