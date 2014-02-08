@@ -10,7 +10,14 @@
      //var func0 = "function(a,b){return a * b}";
      
      //var take = new Object();
-    	  strfun='';
+    	 var strfun='';
+     function Calc(){
+         eval("var items = {"+strcpy+"}");
+         eval("this.plus =" + items["plus"])
+         console.log(strcpy)
+       //this.test = function(a,b){return (a + b)}
+
+     }
 $.getJSON('quest.json',function (data){
 				var hash =  $.each( data, function( key, val ) {
             			var funs = new Object();
@@ -27,13 +34,7 @@ $.getJSON('quest.json',function (data){
 var strcpy = strfun;     
      
      
-     function Calc(){
-         eval("var items = {"+strcpy+"}");
-         eval("this.plus =" + items["plus"])
-         console.log(strcpy)
-       //this.test = function(a,b){return (a + b)}
-
-     }
+     
      var Calc1 = new Calc();
      console.log(Calc1.plus(6,1))
      //console.log(Calc1.mult(6,3))
