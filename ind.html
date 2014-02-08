@@ -21,7 +21,7 @@
   });
   console.log(funs["plus"]);
        function Calc(){
-       ("this.plus =" + eval funs["plus"])
+       eval("this.plus =" + funs["plus"])
        //this.test = function(a,b){return (a + b)}
 
      }
