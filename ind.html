@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ <head>
+  <title>blabla</title>
+  <meta charset="utf-8">
+ </head>
+ <body>
+   <script type="text/javascript">
+     //var func0 = "function(a,b){return a * b}";
+	 
+     $.getJSON('quest.json',function(data){
+	  var funs = {};
+	 $.each( data, function( key, val ) {
+	 funs[key] = val;
+	 console.log(funs[key]);
+     });
+  });
+     function Calc(){
+       eval ("this.plus = " + funs["plus"])
+        
+
+     }
+     var Calc1 = new Calc();
+     console.log(Calc1.plus(6,1))
+     //console.log(Calc1.mult(6,3))
+   </script>
+ </body>
+</html>
