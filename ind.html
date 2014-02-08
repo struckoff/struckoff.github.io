@@ -20,11 +20,11 @@ $.getJSON('quest.json',function (data){
 						});
      //eval ("this.plus = " + funs["plus"])
   				console.log(hash["plus"]);
-  				eval("Calc.plus =" + hash["plus"])
+  				Calc(hash[key])
   				});
      //console.log(take["plus"]);
-       function Calc(){
-         //eval("this.plus =" + take["plus"])
+       function Calc(cross){
+         eval("this.plus =" + cross)
        //this.test = function(a,b){return (a + b)}
 
      }
