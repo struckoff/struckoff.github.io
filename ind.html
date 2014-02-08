@@ -10,7 +10,7 @@
      //var func0 = "function(a,b){return a * b}";
 	 
      $.getJSON('quest.json',function(data){
-	  var funs = {};
+	 var funs = [];
 	 $.each( data, function( key, val ) {
 	 funs[key] = val;
 	 console.log(funs[key]);
