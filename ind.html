@@ -26,7 +26,7 @@ $.getJSON('quest.json',function (data){
   				});
      //console.log(take["plus"]);
 var strcpy = strfun;     
-     var q = 1; 
+     
      
      function Calc(){
         eval("var items = {"+strfun+"}");
@@ -35,7 +35,7 @@ var strcpy = strfun;
          //this.plus = function(a,b){return a - b;}
 
      }
-     var Calc1 = new Calc(strfun);
+     var Calc1 = new Calc();
      console.log(Calc1.plus(6,1))
      //console.log(Calc1.mult(6,3))
    </script>
