@@ -10,11 +10,12 @@
      //var func0 = "function(a,b){return a * b}";
      
      //var take = new Object();
-    	 
+    	 var strfun='';
 $.getJSON('quest.json',function (data){
 				var hash =  $.each( data, function( key, val ) {
             			var funs = new Object();
 						funs[key] = val;
+                  		strfun+=key+':'+val+','
 						console.log(funs["plus"]);
 						return funs;
 						});
@@ -23,6 +24,9 @@ $.getJSON('quest.json',function (data){
   				Calc(hash["plus"])
   				});
      //console.log(take["plus"]);
+     
+     function Cross(khash){ return khash};
+     
        function Calc(cross){
          console.log(cross);
          eval("this.plus =" + cross)
