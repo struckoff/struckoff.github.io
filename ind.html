@@ -28,8 +28,7 @@ $.getJSON('quest.json',function (data){
      
      
        function Calc(){
-         var items = eval("{"+strfun+"}");
-         console.log(cross);
+         eval("var items = {"+strfun+"}");
          eval("this.plus =" + items["plus"])
        //this.test = function(a,b){return (a + b)}
 
