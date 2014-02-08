@@ -12,16 +12,16 @@
      //var take = new Object();
     	 
 var take =  $.getJSON('quest.json',function (data){
-		var hash =  $.each( data, function( key, val ) {
-            var funs = new Object();
-			funs[key] = val;
-			console.log(funs["plus"]);
-			return funs;
-			});
+				var hash =  $.each( data, function( key, val ) {
+            			var funs = new Object();
+						funs[key] = val;
+						console.log(funs["plus"]);
+						return funs;
+						});
      //eval ("this.plus = " + funs["plus"])
-  console.log(hash["plus"]);
-  return hash;
-  });
+  				console.log(hash["plus"]);
+  				return hash['plus'];
+  				});
   console.log(take["plus"]);
        function Calc(){
        eval("this.plus =" + take["plus"])
