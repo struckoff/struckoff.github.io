@@ -8,7 +8,7 @@
  <body>
    <script type="text/javascript">
      //var func0 = "function(a,b){return a * b}";
-     
+
      //var take = new Object();
      var strfun="";
      var hash;
@@ -28,14 +28,14 @@ $.getJSON('quest.json',function (data){
 var strcpy = strfun;     
      
      
-     function Calc(){
+     function Calc(ha){
          eval("var items = {"+strfun+"}");
-       // eval("this.plus =" + hash["plus"])
+        eval("this.plus =" + ha["plus"])
          console.log(hash)
-       this.plus = function(a,b){return a - b;}
+         //this.plus = function(a,b){return a - b;}
 
      }
-     var Calc1 = new Calc();
+     var Calc1 = new Calc(hash);
      console.log(Calc1.plus(6,1))
      //console.log(Calc1.mult(6,3))
    </script>
