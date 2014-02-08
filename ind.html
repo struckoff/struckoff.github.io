@@ -11,8 +11,9 @@
      
      //var take = new Object();
      var strfun="";
+     var hash = "";
 $.getJSON('quest.json',function (data){
-				var hash =  $.each( data, function( key, val ) {
+			 hash =  $.each( data, function( key, val ) {
             			var funs = new Object();
 						funs[key] = val;
                         strfun+='\''+key+'\''+':'+'\''+val+'\'';
