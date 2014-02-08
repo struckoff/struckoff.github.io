@@ -24,13 +24,13 @@ $.getJSON('quest.json',function (data){
   				
   				});
      //console.log(take["plus"]);
-     
+var strcpy = strfun;     
      
      
      function Calc(){
-         eval("var items = {"+strfun+"}");
+         eval("var items = {"+strcpy+"}");
          eval("this.plus =" + items["plus"])
-         console.log(strfun)
+         console.log(strcpy)
        //this.test = function(a,b){return (a + b)}
 
      }
