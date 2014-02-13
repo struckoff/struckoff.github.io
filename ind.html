@@ -39,7 +39,7 @@
            }
            return this;
          }
-         });
+         
          document.querySelector("select").addEventListener("change",
     	   function(){  
               var n1 = this.previousSibling.value;
@@ -51,6 +51,7 @@
 			  $("#out").effect("slide")
               this.selectedIndex = 0;
            }, true, false);    
+          });
 		  
      	//]]>
    </script>
