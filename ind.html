@@ -14,18 +14,6 @@
    <div id="out" style="color: #990000; font-size: 64px; text-align:center"></div>
   
    <script>
-        //<![CDATA[
-     	 //массив операций, могущий быть прочитанным из JSON-файла
-     /*var operations = {
-                "plus":"function(x, y) { return 1*x + 1*y; }", 
-                "minus": "function(x, y) { return x - y; }", 
-				"multiplication": "function(x, y) { return x*y; }", 
-				"division": "function(x, y) {\
-					if (y == 0) return Null;\
-					else return x/y; }",
-         }; */ 
-		
-     	 //заполнение объекта-калькулятора операциями
         $.getJSON("quest.json",function(operations){
 		 $.each( operations, function( key, value ) {
 			$('#choose').append($("<option value="+key+">"+key+"</option>"));
