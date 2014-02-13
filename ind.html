@@ -16,14 +16,14 @@
    <script>
         //<![CDATA[
      	 //массив операций, могущий быть прочитанным из JSON-файла
-         var operations = {
+     /*var operations = {
                 "plus":"function(x, y) { return 1*x + 1*y; }", 
                 "minus": "function(x, y) { return x - y; }", 
 				"multiplication": "function(x, y) { return x*y; }", 
 				"division": "function(x, y) {\
 					if (y == 0) return Null;\
 					else return x/y; }",
-         };  
+         }; */ 
 		
      	 //заполнение объекта-калькулятора операциями
         $.getJSON("quest.json",function(operations){
