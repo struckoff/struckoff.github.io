@@ -2,5 +2,5 @@
   "plus":"function(a, b) { return 1*a+1*b; }",
   "minus":"function(a, b) { return a-b; }",
   "multiplication":"function(a, b) { return a*b; }",
-  "division":"function(a, b) { if (b!=0) return a-b/ else return NaN; }"
+  "division":"function(a, b) { if (b!=0) return a-b; return NaN; }"
 }
