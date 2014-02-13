@@ -1,8 +1,7 @@
 {
-  "plus":"function(x, y) { return 1*x + 1*y; }", 
-  "minus": "function(x, y) { return x - y; }", 
-  "multiplication": "function(x, y) { return x*y; }", 
- "division": "function(x, y) {\
-					if (y == 0) return Null;\
-					else return x/y; }",
+    "plus": "function(x, y) { return 1*x + 1*y; }",
+    "minus": "function(x, y) { return x - y; }",
+    "multiplication": "function(x, y) { return x*y; }",
+    "division": "function(x, y) {if (y == 0) return Null; else return x/y; }",
+    
 }
