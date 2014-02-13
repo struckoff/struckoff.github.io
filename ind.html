@@ -26,10 +26,11 @@
          };  
 		
      	 //заполнение объекта-калькулятора операциями
+        $.getJSON("quest.json",function(operations){
 		 $.each( operations, function( key, value ) {
 			$('#choose').append($("<option value="+key+">"+key+"</option>"));
 			});
-     $.getJSON("quest.json",function(operations){
+
 		
          function Calc(){
            for (k in operations) {
