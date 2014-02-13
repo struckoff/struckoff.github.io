@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script> 
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
  <head>
-  <title>blabla</title>
-  <meta charset="utf-8">
+	<title>Calculator 1</title>
+	<meta charset="utf-8">
+	<style>body {zoom:120%}</style> 
  </head>
- <body>
-   <script type="text/javascript">
-     //var func0 = "function(a,b){return a * b}";
-
-     //var take = new Object();
-     var strfun="";
-     var hash;
-$.getJSON('quest.json',function (data){
-			 hash =  $.each( data, function( key, val ) {
-            			var funs = new Object();
-						funs[key] = val;
-                        strfun+='\''+key+'\''+':'+'\''+val+'\'';
-						console.log(funs["plus"]);
-						return funs;
-						});
-     //eval ("this.plus = " + funs["plus"])
-  				console.log(hash);
-  				
-  				});
-     //console.log(take["plus"]);
-var strcpy = strfun;     
-     
-     
-     function Calc(){
-        eval("var items = {"+strfun+"}");
-        eval("this.plus =" + hash["plus"])
-         console.log(hash)
-         //this.plus = function(a,b){return a - b;}
-
-     }
-     var Calc1 = new Calc();
-     console.log(Calc1.plus(6,1))
-     //console.log(Calc1.mult(6,3))
+ <body id="bdy">
+   <p>В этом коде фигурирует функция-объект, присвоение методов которой происходит из JSON через eval. Доработка: интерфейс калькулятора строится программно, и теги option возникают в цикле по массиву operations, eval устраняется.</p>
+   <div style=" text-align:center"><input><select id="choose" ><option value="+key+">Выбор:</option></select><input><div>
+   <div id="out" style="color: #990000; font-size: 64px; text-align:center"></div>
+  
+   <script>
+        //<![CDATA[
+     	 //массив операций, могущий быть прочитанным из JSON-файла
+         var operations = {
+                "plus":"function(x, y) { return 1*x + 1*y; }", 
+                "minus": "function(x, y) { return x - y; }", 
+				"multiplication": "function(x, y) { return x*y; }", 
+				"division": "function(x, y) {\
+					if (y == 0) return Null;\
+					else return x/y; }",
+         };  
+		
+     	 //заполнение объекта-калькулятора операциями
+		 $.each( operations, function( key, value ) {
+			$('#choose').append($("<option value="+key+">"+key+"</option>"));
+			});
+     $.getJSON("question.json",function(operations){
+		
+         function Calc(){
+           for (k in operations) {
+               var AltEval = new Function( "this."+k+"="+operations[k]);
+			   AltEval(); 
+           }
+           return this;
+         }
+         });
+         document.querySelector("select").addEventListener("change",
+    	   function(){  
+              var n1 = this.previousSibling.value;
+              var n2 = this.nextSibling.value;
+           
+              console.log( Calc()[this.value](n1,n2) );
+			  out=Calc()[this.value](n1,n2);
+			  $("#out").html($('<div>'+out+'</div>'));
+			  $("#out").effect("slide")
+              this.selectedIndex = 0;
+           }, true, false);    
+		  
+     	//]]>
    </script>
  </body>
 </html>
