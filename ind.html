@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" type="text/css" href="calc.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script> 
 	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
@@ -10,7 +11,7 @@
  </head>
  <body>
    <div style=" text-align:center"><input><select id="choose" ><option value="+key+">Выбор:</option></select><input><div>
-   <div id="out" style="color: #009900; font-size: 64px; text-align:center"></div>
+   <div id="out"></div>
   
    <script>
         $.getJSON("quest.json",function(operations){
