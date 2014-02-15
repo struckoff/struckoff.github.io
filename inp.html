@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Calculator 1</title>
+  <meta charset="utf-8">
+   <style>body {zoom:120%}</style> 
+ </head>
+ <body>
+   <p>Доработка: интерфейс калькулятора строится программно, и теги option возникают в цикле по массиву operations, JSON выносится в отдельный файл - это уже jQuery</p>
+  
+   <input><select id="chh\oose"><option>Ваш выбор:</option><option value='plus'>+</option><option value='asterisk'>*</option></select><input> 
+   <script>
+        //<![CDATA[
+     	 //массив операций, могущий быть прочитанным из JSON-файла
+     
+     $.getJSON("quest.json",function(operations){
+		 $.each( operations, function( key, value ) {
+			$('#choose').append($("<option value="+key+">"+key+"</option>"));
+           
+           /*var operations = {
+                "plus"		:	"var arg = []; arg[0] = 1*arguments[0] + 1*arguments[1]; arg[1]=arguments.length; arg[2]='+'; return arg", 
+                 "asterisk"	: 	"return arguments[0] * arguments[1]", 
+         };  */
+         
+     	 //заполнение объекта-калькулятора операциями
+         function Calc(){
+           for (k in operations) {
+                this[k] = new Function(operations[k]);
+             	
+           }
+         return this;
+         }
+ document.querySelector("select").addEventListener("change",
+    	   function(){  
+              var n1 = this.previousSibling.value;
+              var n2 = this.nextSibling.value;
+             
+              console.log( Calc()[this.value](n1,n2)[2]);
+              this.selectedIndex = 0;
+           }, true, false);    
+     	//]]>
+   </script>
+ </body>
+</html>
