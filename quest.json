@@ -2,6 +2,6 @@
   "plus":"function() { var arg = []; arg[0] = 1*arguments[0] + 1*arguments[1]; arg[1]=arguments.length; arg[2]='+'; return arg; }",
   "minus":"function() { var arg = []; arg[0] = 1*arguments[0] - 1*arguments[1]; arg[1]=arguments.length; arg[2]='-'; return arg; }",
   "multiplication":"function() { var arg = []; arg[0] = 1*arguments[0] + 1*arguments[1]; arg[1]=arguments.length; arg[2]='*'; return arg; }",
-    "division":"function() { var arg = []; arg[0] = NaN; if (arguments[1]!=0) arg[0] = arguments[0]/arguments[1]; arg[1]=arguments.length; arg[2]='//'; return arg }",
+    "division":"function() { var arg = []; arg[0] = NaN; if (arguments[1]!=0) arg[0] = arguments[0]/arguments[1]; arg[1]=arguments.length;  return arg }",
   
 }
