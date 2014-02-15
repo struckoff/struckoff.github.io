@@ -31,16 +31,16 @@
            }
          return this;
          }
-         for (var i = 0; i < Calc()[this.value]()[1]; i++)
-         	{
-              $("#inp").append("<input>")
-         	}
+     
               
          document.querySelector("select").addEventListener("change",
     	   function(){  
               var n1 = this.previousSibling.value;
               var n2 = this.nextSibling.value;
-             
+                 for (var i = 0; i < Calc()[this.value](n1,n2)[1]; i++)
+         	{
+              $("#inp").append("<input>")
+         	}
               console.log( Calc()[this.value](n1,n2)[2]);
               this.selectedIndex = 0;
            }, true, false); 
