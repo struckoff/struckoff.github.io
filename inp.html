@@ -45,14 +45,7 @@
               this.selectedIndex = 0;
            }, true, false); 
 		
-         function Calc(){
-           for (k in operations) {
-               var AltEval = new Function( "this."+k+"="+operations[k]);
-			   AltEval(); 
-           }
-           return this;
-         }
-         
+       
          document.querySelector("select").addEventListener("change",
     	   function(){  
               var n1 = this.previousSibling.value;
