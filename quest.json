@@ -3,4 +3,5 @@
   "minus":"function(a, b) { return a-b; }",
   "multiplication":"function(a, b) { return a*b; }",
   "division":"function(a, b) { if (b!=0) return (a/b); return NaN; }"
+  "test":"function(a){return a;}"
 }
