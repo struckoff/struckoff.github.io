@@ -42,6 +42,9 @@
          	{
               $("#inp").append("<input>");
          	} */
+             out=Calc()[this.value](n1,n2)[0];
+			  $("#out").html($('<div>'+out+'</div>'));
+			  $("#out").effect("slide",{direction: 'down'})
               console.log( Calc()[this.value](n1,n2)[1]);
               this.selectedIndex = 0;
            }, true, false);
