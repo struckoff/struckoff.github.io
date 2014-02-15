@@ -26,8 +26,8 @@
          
      	 //заполнение объекта-калькулятора операциями
          function Calc(){
-           for (k in operations) {
-                this[k] = new Function(operations[k]);
+           
+                this[key] = new Function(operations[key]);
              	
            }
          return this;
