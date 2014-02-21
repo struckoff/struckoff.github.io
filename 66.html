@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Calculator 1</title>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <meta charset="utf-8">
+   <style>body {zoom:120%}</style> 
+ </head>
+ <body>
+   <h2>Калькулятор</h2>
+   <p>Результат: <span id="r"></span></p>
+   <select><option>Выберите действие:</option></select> для аргументов: <span id="args"></span> 
+   <script>
+        //<![CDATA[
+     	 //массив операций, могущий быть прочитанным из JSON-файла
+var operations = {
+                 "plus"		:	[2, "return 1*arguments[0] + 1*arguments[1]"], 
+                 "asterisk"	: 	[2, "return arguments[0] * arguments[1]"], 
+                 "progress" :	[3, "var n1 = 1*arguments[0]; var n2 = 1*arguments[1]; var step = 1*arguments[2]; var s = 0; for (var i=n1; i<=n2; i+=Number(step)) {s += i};   return s"],                 
+       };   
+     	 
+       function Calc(){
+   //заполнение объекта-калькулятора операциями
+           for (k in operations) {
+                this[k] = new Function(operations[k][1]);
+           }
+         
+           this.buildSelect = function(){
+              for (k in operations) {
+                $("select").append("<option value='" + k + "'>" + k + "</option>");  
+               
+              }             
+           }
+
+           this.buildInputs = function(){
+           	 var args = operations[   $("select").val()    ][0];
+             $("#args").html("");
+           	 for (var i = 0; i < args; i++)
+                $("#args").append("<input>");
+               
+             $( "<button>Вычислить</button>" ).appendTo( "#args" ).on("click", function(){
+             
+                  var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
+                  $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
+                  $("select")[0].selectedIndex = 0; 
+             });
+           }
+           return this;
+         }
+         Calc().buildSelect();  
+         $("select").on("change",  function(){  
+           	  Calc().buildInputs();
+         });  
+     
+     	//]]>
+   </script>
+ </body>
+</html>
