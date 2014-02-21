@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
 	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
  <head>
@@ -15,24 +15,14 @@
    <script>
         //<![CDATA[
      	 //массив операций, могущий быть прочитанным из JSON-файла
-
-         
-     
-       var operations = {
-                 "plus"		:	[2, "return 1*arguments[0] + 1*arguments[1]"], 
-                 "asterisk"	: 	[2, "return arguments[0] * arguments[1]"], 
-                 "progress" :	[3, "var n1 = 1*arguments[0]; var n2 = 1*arguments[1]; var step = 1*arguments[2]; var s = 0; for (var i=n1; i<=n2; i+=Number(step)) {s += i};   return s"],
-                 
+var operations = {
+                 "plus"		:	[2, "return 1*arguments[0] + 1*arguments[1]","+"], 
+                 "asterisk"	: 	[2, "return arguments[0] * arguments[1]","-"], 
+                 "progress" :	[3, "var n1 = 1*arguments[0]; var n2 = 1*arguments[1]; var step = 1*arguments[2]; var s = 0; for (var i=n1; i<=n2; i+=Number(step)) {s += i};   return s","progr"],                 
        };   
      	 
- 
-
-      
-     
        function Calc(){
-            
-   
-          //заполнение объекта-калькулятора операциями
+   //заполнение объекта-калькулятора операциями
            for (k in operations) {
                 this[k] = new Function(operations[k][1]);
            }
@@ -40,7 +30,7 @@
            this.buildSelect = function(){
               for (k in operations) {
                 $("select").append("<option value='" + k + "'>" + k + "</option>");  
-               
+              
               }             
            }
 
@@ -57,17 +47,8 @@
                   $("select")[0].selectedIndex = 0; 
              });
            }
-           
-
            return this;
-         
-          
          }
-     
- 
-       
-     
-     
          Calc().buildSelect();  
          $("select").on("change",  function(){  
            	  Calc().buildInputs();
