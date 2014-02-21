@@ -15,14 +15,24 @@
    <script>
         //<![CDATA[
      	 //массив операций, могущий быть прочитанным из JSON-файла
-var operations = {
+
+         
+     
+       var operations = {
                  "plus"		:	[2, "return 1*arguments[0] + 1*arguments[1]"], 
                  "asterisk"	: 	[2, "return arguments[0] * arguments[1]"], 
-                 "progress" :	[3, "var n1 = 1*arguments[0]; var n2 = 1*arguments[1]; var step = 1*arguments[2]; var s = 0; for (var i=n1; i<=n2; i+=Number(step)) {s += i};   return s"],                 
+                 "progress" :	[3, "var n1 = 1*arguments[0]; var n2 = 1*arguments[1]; var step = 1*arguments[2]; var s = 0; for (var i=n1; i<=n2; i+=Number(step)) {s += i};   return s"],
+                 
        };   
      	 
+ 
+
+      
+     
        function Calc(){
-   //заполнение объекта-калькулятора операциями
+            
+   
+          //заполнение объекта-калькулятора операциями
            for (k in operations) {
                 this[k] = new Function(operations[k][1]);
            }
@@ -30,7 +40,7 @@ var operations = {
            this.buildSelect = function(){
               for (k in operations) {
                 $("select").append("<option value='" + k + "'>" + k + "</option>");  
-              
+               
               }             
            }
 
@@ -47,8 +57,17 @@ var operations = {
                   $("select")[0].selectedIndex = 0; 
              });
            }
+           
+
            return this;
+         
+          
          }
+     
+ 
+       
+     
+     
          Calc().buildSelect();  
          $("select").on("change",  function(){  
            	  Calc().buildInputs();
