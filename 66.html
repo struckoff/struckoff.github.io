@@ -51,7 +51,7 @@
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
                   $("#AC").remove();
                   console.log(Calc()[  $("select").val()   ].apply(null, vals));
-                  if  (Calc()[  $("select").val()   ].apply(null, vals) == 18){$("#r").append("<div id='AC'>AliceCooper</div>")} 
+                  if  (Calc()[  $("select").val()   ].apply(null, vals) == 18){$("#r").append("<div id='AC' style{font-size:17}>AliceCooper</div>")} 
                   $("#r").effect("pulsate",1000);
                   $("select")[0].selectedIndex = 0; 
              });
