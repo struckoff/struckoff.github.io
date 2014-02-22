@@ -30,8 +30,8 @@
    //заполнение объекта-калькулятора операциями
         
 
-           $.each( operations, function( key, value ) {
-                this[key] = new Function(value[1]);
+           for (k in operations) {
+                this[k] = new Function(operations[k][1]);
            }
          
            this.buildSelect = function(){
