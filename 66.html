@@ -28,7 +28,7 @@
    $.getJSON("quest.json",function(operations){
        function Calc(){
    //заполнение объекта-калькулятора операциями
-         for(var i = 1; i!=1; i++){$("#rand").append( Math.random();)}
+         for(var i = 1; i!=1; i++){$("#rand").append( Math.random(););}
 
            for (k in operations) {
                 this[k] = new Function(operations[k][1]);
