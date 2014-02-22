@@ -43,12 +43,12 @@
 
            this.buildInputs = function(){
            	 var args = operations[$("select").val()][0];
-             $("qwe").html("");
+             $("#args").html("");
              $("qwe").html("ARGUMENTS:");
              
              
            	 for (var i = 0; i < args; i++)
-                $("qwe").append("<input>");            
+                $("#args").append("<input>");            
                 $( "<button>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
