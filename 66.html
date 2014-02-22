@@ -19,7 +19,7 @@ var operations = {
                  "plus"		:	[2, "return 1*arguments[0] + 1*arguments[1]","+"],
    				 "minus"		:	[2, "return 1*arguments[0] - 1*arguments[1]","-"],
                  "asterisk"	: 	[2, "return arguments[0] * arguments[1]","*"],
-  				 "div"	: 	[2, "if (arguments[1]) return arguments[0] / arguments[1]; return NaN","/"], 
+  				 "div"	: 	[2, "if (arguments[1]!=0) return arguments[0] / arguments[1]; return NaN","/"], 
                  "progress" :	[3, "var n1 = 1*arguments[0]; var n2 = 1*arguments[1]; var step = 1*arguments[2]; var s = 0; for (var i=n1; i<=n2; i+=Number(step)) {s += i};   return s","Ar. Progress"],                 
        };   
      	 
