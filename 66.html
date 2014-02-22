@@ -24,11 +24,7 @@
    <select id="sel" class="form-control"><option>Выберите действие:</option></select> ARGUMENTS <span id="args"></span>    
       <div class="bgm" id="r"></div>
       
-         <script> 
-       
-        //<![CDATA[
-     	 //массив операций, могущий быть прочитанным из JSON-файла
-           
+         <script>           
    $.getJSON("quest.json",function(operations){
      	 console.log(operations);
        function Calc(){
