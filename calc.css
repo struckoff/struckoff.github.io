@@ -21,10 +21,10 @@ input
  }
 button
 {
-   border: 2px solid green;
+  border: 2px solid green;
   background: none;
 }
 
-::selection {background: green;}
+bgm::selection {background: green;}
 ::-moz-selection {background:green;}
 ::-webkit-selection {background:green; color:red;}
