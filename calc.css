@@ -4,13 +4,13 @@
   {
    padding-left: 40%;
    background-color:#0A330D;
-   border: 0px solid #17771F;
+   border: 1px solid #17771F;
    color: #1CB529;
   }
 input
  {
    background: #0A330D;
-   border: 0px solid #17771F;
+   border: 1px solid #17771F;
  }
 
 .bgm
@@ -21,7 +21,7 @@ input
  }
 button
 {
-  border: 0px solid green;
+  border: 1px solid green;
   background: none;
 }
 
