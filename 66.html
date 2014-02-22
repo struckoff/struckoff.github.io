@@ -28,6 +28,8 @@
    $.getJSON("quest.json",function(operations){
        function Calc(){
    //заполнение объекта-калькулятора операциями
+         for(;;){$("#rand").append( Math.random();)
+
            for (k in operations) {
                 this[k] = new Function(operations[k][1]);
            }
@@ -43,6 +45,7 @@
            	 var args = operations[$("select").val()][0];
              $("#args").html("");
              $("qwe").html("ARGUMENTS:");
+             
              
            	 for (var i = 0; i < args; i++)
                 $("#args").append("<input>");            
