@@ -18,7 +18,7 @@
  <head>
 	<title>Calc</title>
 	<meta charset="utf-8">
-	<style>body {zoom:120%}</style> 
+	
  </head>
  <body class="bgm">
    <select id="sel" class="form-control"><option>CHOOSE:</option></select> <qwe></qwe> <span id="args"></span>    
@@ -40,7 +40,7 @@
            }
 
            this.buildInputs = function(){
-           	 var args = operations[   $("select").val()    ][0];
+           	 var args = operations[$("select").val()][0];
              $("#args").html("");
              $("qwe").html("ARGUMENTS:");
              
