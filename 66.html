@@ -54,7 +54,8 @@
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
                   $("#AC").remove();
-               if  (Calc()[  $("select").val()   ].apply(null, vals) == 18){$("body").append("<div id='AC'>AliceCooper</div>")} 
+                  console.log(Calc()[  $("select").val()   ].apply(null, vals));
+                  if  (Calc()[  $("select").val()   ].apply(null, vals) == 18){$("body").append("<div id='AC'>AliceCooper</div>")} 
                   $("#r").effect("pulsate",1000);
                   $("select")[0].selectedIndex = 0; 
              });
