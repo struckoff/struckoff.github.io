@@ -1,5 +1,9 @@
+body
+  {
+  font-family: 'Press Start 2P', cursive;
+  }
+
 #sel
   {
-    color: red;
     padding-left: 40%;
   }
