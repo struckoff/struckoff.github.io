@@ -18,10 +18,15 @@
 	<style>body {zoom:120%}</style> 
  </head>
  <body>
-   <h2>Калькулятор</h2>
+   <div class="container-fluid">
+ 	 <div class="row-fluid">
+       <div class="span2">
+   		<h2>Калькулятор</h2>
    <p>Результат: <span id="r"></span></p>
+          </div>
+       <div class="span10">
    <select><option>Выберите действие:</option></select> для аргументов: <span id="args"></span> 
-   <script>
+         <script></div>
         //<![CDATA[
      	 //массив операций, могущий быть прочитанным из JSON-файла
 var operations = {
