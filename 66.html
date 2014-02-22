@@ -63,7 +63,7 @@ var operations = {
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
-                  ("#r").effect("slide");
+                  $("#r").effect("slide");
                   $("select")[0].selectedIndex = 0; 
              });
            }
