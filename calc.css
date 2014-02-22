@@ -25,6 +25,6 @@ button
   background: none;
 }
 
-bgm::selection {background: green;}
+.bgm::selection {background: green;}
 ::-moz-selection {background:green;}
 ::-webkit-selection {background:green; color:red;}
