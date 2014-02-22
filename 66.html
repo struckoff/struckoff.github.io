@@ -21,7 +21,7 @@
 	<style>body {zoom:120%}</style> 
  </head>
  <body class="bgm">
-   <select id="sel" class="form-control"><option>Выберите действие:</option></select> для аргументов: <span id="args"></span>    
+   <select id="sel" class="form-control"><option>Выберите действие:</option></select> ARGUMENTS <span id="args"></span>    
       <div class="bgm" id="r"></div>
       
          <script> 
@@ -57,7 +57,7 @@ var operations = {
            	 for (var i = 0; i < args; i++)
                 $("#args").append("<input>");
                
-             $( "<button>Вычислить</button>" ).appendTo( "#args" ).on("click", function(){
+             $( "<button>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
