@@ -25,6 +25,6 @@ button
   background: none;
 }
 
-#sel::selection {background: green;}
-#sel::-moz-selection {background:green;}
-#sel::-webkit-selection {background:green; color:red;}
+option::selection {background: green;}
+option::-moz-selection {background:green;}
+option::-webkit-selection {background:green; color:red;}
