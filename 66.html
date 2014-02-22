@@ -21,12 +21,13 @@
  <body>
 
    <p>Результат: </p>
-   <select id="sel" class="form-control"><option>Выберите действие:</option></select> для аргументов: <span id="args"></span> 
+   <select><option>Выберите действие:</option></select> для аргументов: <span id="args"></span> 
        
       <span id="r"></span>
       
          <script> 
-        $("#r").effect("slide")
+           $('select').selectmenu();
+        $("#r").effect("slide");
          
         //<![CDATA[
      	 //массив операций, могущий быть прочитанным из JSON-файла
