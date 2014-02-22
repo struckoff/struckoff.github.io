@@ -24,3 +24,7 @@ button
    border: 2px solid green;
   background: none;
 }
+
+::selection {background: #ccc;}
+::-moz-selection {background: #ccc;}
+::-webkit-selection {background: #ccc; color:#fff;}
