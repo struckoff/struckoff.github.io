@@ -30,25 +30,25 @@
    //заполнение объекта-калькулятора операциями
         
 
-           for (k in operations) {
-                this[k] = new Function(operations[k][1]);
+           for (key in operations) {
+                this[key] = new Function(operations[key][1]);
            }
          
            this.buildSelect = function(){
-              for (k in operations) {
-                $("select").append("<option value='" + k + "'>" + operations[k][2] + "</option>");  
+              for (key in operations) {
+                $("select").append("<option value='" + key + "'>" + operations[key][2] + "</option>");  
               
               }             
            }
 
            this.buildInputs = function(){
            	 var args = operations[$("select").val()][0];
-             $("#args").html("");
+             $("qwe").html("");
              $("qwe").html("ARGUMENTS:");
              
              
            	 for (var i = 0; i < args; i++)
-                $("#args").append("<input>");            
+                $("qwes").append("<input>");            
                 $( "<button>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
