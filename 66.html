@@ -21,7 +21,7 @@
  </head>
  <body class="bgm">
    <select id="sel" class="form-control"><option>CHOOSE:</option></select> <qwe></qwe> <span id="args"></span>    
-      <div  id="r"></div>
+      <div id="r"></div>
       
  <script>           
    $.getJSON("quest.json",function(operations){
@@ -44,7 +44,7 @@
              $("qwe").html("ARGUMENTS:");
              
            	 for (var i = 0; i < args; i++)
-                $("#args").append("<input>");            
+                $("#args").append("<input class='form-control'>");            
                 $( "<button>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
