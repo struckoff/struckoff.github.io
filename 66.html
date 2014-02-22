@@ -25,9 +25,7 @@
       <div class="bgm" id="r"></div>
       
          <script> 
-         
        
-         
         //<![CDATA[
      	 //массив операций, могущий быть прочитанным из JSON-файла
 var operations = {
@@ -61,7 +59,7 @@ var operations = {
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
-                  $("#r").effect("slide");
+                  $("#r").effect("pulsate");
                   $("select")[0].selectedIndex = 0; 
              });
            }
