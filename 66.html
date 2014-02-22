@@ -50,7 +50,7 @@
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
-                  $("#r").effect("pulsate");
+                  $("#r").effect("pulsate",3);
                   $("select")[0].selectedIndex = 0; 
              });
            }
