@@ -21,7 +21,7 @@
 	<style>body {zoom:120%}</style> 
  </head>
  <body class="bgm">
-   <select id="sel" class="form-control"><option>Выберите действие:</option></select> <qwe>ARGUMENTS:</qwe> <span id="args"></span>    
+   <select id="sel" class="form-control"><option>Выберите действие:</option></select> <qwe></qwe> <span id="args"></span>    
       <div class="bgm" id="r"></div>
       
  <script>           
@@ -43,6 +43,7 @@
            this.buildInputs = function(){
            	 var args = operations[   $("select").val()    ][0];
              $("#args").html("");
+             ${"qwe"}.html("ARGUMENTS:")
            	 for (var i = 0; i < args; i++)
                 $("#args").append("<input>");
                
