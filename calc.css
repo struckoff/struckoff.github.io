@@ -26,5 +26,5 @@ button
 }
 
 #sel::selection {background: green;}
-::-moz-selection {background:green;}
-::-webkit-selection {background:green; color:red;}
+#sel::-moz-selection {background:green;}
+#sel::-webkit-selection {background:green; color:red;}
