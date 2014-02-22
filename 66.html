@@ -26,7 +26,6 @@
       
  <script>           
    $.getJSON("quest.json",function(operations){
-     	 console.log(operations);
        function Calc(){
    //заполнение объекта-калькулятора операциями
            for (k in operations) {
@@ -43,13 +42,11 @@
            this.buildInputs = function(){
            	 var args = operations[   $("select").val()    ][0];
              $("#args").html("");
-             
              $("qwe").html("ARGUMENTS:");
              
            	 for (var i = 0; i < args; i++)
-                $("#args").append("<input>");
-               
-             $( "<button>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
+                $("#args").append("<input>");            
+                $( "<button>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
