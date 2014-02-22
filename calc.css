@@ -25,6 +25,6 @@ button
   background: none;
 }
 
-::selection {background: #ccc;}
-::-moz-selection {background: #ccc;}
-::-webkit-selection {background: #ccc; color:#fff;}
+::selection {background: green;}
+::-moz-selection {background:green;}
+::-webkit-selection {background:green; color:red;}
