@@ -22,13 +22,13 @@
  <body class="bgm">
    <select id="sel" class="form-control"><option>CHOOSE:</option></select> <qwe></qwe> <span id="args"></span>    
       <div id="r"></div>
-   <div id="rand"></div>
+
       
  <script>           
    $.getJSON("quest.json",function(operations){
        function Calc(){
    //заполнение объекта-калькулятора операциями
-         for(var i = 1; i!=1; i++){$("#rand").append( Math.random(););}
+        
 
            for (k in operations) {
                 this[k] = new Function(operations[k][1]);
@@ -55,7 +55,7 @@
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
                   $("#AC").remove();
                   console.log(Calc()[  $("select").val()   ].apply(null, vals));
-                  if  (Calc()[  $("select").val()   ].apply(null, vals) == 18){$("#r").append("<div id='AC' style='font-																												size:17px'>AliceCooper</div>")} 
+                  if  (Calc()[  $("select").val()   ].apply(null, vals) == 18){$("body").append("<div id='AC'>AliceCooper</div>")} 
                   $("#r").effect("pulsate",1000);
                   $("select")[0].selectedIndex = 0; 
              });
