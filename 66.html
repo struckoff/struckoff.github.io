@@ -45,7 +45,7 @@
              
            	 for (var i = 0; i < args; i++)
                 $("#args").append("<input>");            
-                $( "<button class='btn btn-success'>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
+                $( "<button>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
