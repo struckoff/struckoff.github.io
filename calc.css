@@ -3,20 +3,20 @@
 #sel
   {
    padding-left: 40%;
-   background-color:#33CCFF;
+   background-color:#0A330D;
    border: 2px solid green;
    color: green;
   }
 input
  {
-   background: #06390A;
+   background: #0A330D;
    border: 2px solid green;
  }
 
 .bgm
  {
   font-family: 'Press Start 2P';
-  background-color: #06390A; 
+  background-color: #0A330D; 
   color: green;
  }
 button
