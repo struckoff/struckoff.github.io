@@ -28,11 +28,12 @@
       
  <script>
    function sh(){
-     $("#tohide").hide();
+
+  
+   $.getJSON($("#gj").val(),function(operations){
+          $("#tohide").hide();
      $("#toshow").show();
      
-    };
-   $.getJSON($("#gj").val(),function(operations){
        function Calc(){
    //заполнение объекта-калькулятора операциями
         
@@ -72,7 +73,7 @@
          Calc().buildSelect();  
          $("select").on("change",  function(){  
            	  Calc().buildInputs();
-         });  });
+         });  });  };
      
      	//]]>
    </script>
