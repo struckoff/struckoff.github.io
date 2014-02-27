@@ -45,6 +45,7 @@ button
 
 #tohide
  {
+  width: 400px; 
   margin-top: 10%;
   text-align: center;
  }
