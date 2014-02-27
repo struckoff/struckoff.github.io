@@ -50,7 +50,7 @@ button
   text-align: center;
  }
 
-.btn[class=btn]
+.btn[class="btn"]
 {
   background-color:green;
 }
