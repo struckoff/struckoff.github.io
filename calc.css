@@ -9,7 +9,7 @@
    font-size:17px;
    text-align: center;
   
-    
+  #sel:focus{  
     box-shadow: 0 0 8px #FF0000 !important;
   }
 .ar
