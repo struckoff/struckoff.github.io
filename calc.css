@@ -55,3 +55,9 @@ button
   text-align: center;
  }
 
+#tooltip
+{
+  width:197px;
+  word-wrap:break-word;
+  color: #ccc
+}
