@@ -28,7 +28,7 @@
          
            //заполнение объекта-калькулятора операциями
            this.getOperations = function(){
-               $.getJSON($("#opersrc").val(), function(operations){
+               $.get($("#opersrc").val(), function(operations){
                    for (var k in operations) 
                         self[k] = new Function(operations[k][1]);
                    self.operations = operations;
@@ -36,6 +36,7 @@
                    $("#selOp").show();
                  
                    $("#selOp").on("change", function(){
+                       console.log($(this).val())
                        self.buildInputs(      $(this).val()          );
                    })
                })
