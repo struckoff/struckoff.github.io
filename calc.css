@@ -50,6 +50,7 @@ button
 
 #tohide
  {
+   width:197px;
   float: none;
   margin-top: 10%;
   text-align: center;
@@ -57,7 +58,7 @@ button
 
 #tooltip
 {
-  width:197px;
+ 
   word-wrap:break-word;
   color: #ccc;
   margin-top: 55px;
