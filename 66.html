@@ -20,7 +20,7 @@
 	
  </head>
   <body>
-  <div id="tohide"><button onclick="sh()">SHOW</button></div>
+    <div id="tohide"><input id="gj"><button onclick="sh()">SHOW</button></div>
   <div id = "toshow" class="bgm" style="display:none">
    <select id="sel" class="form-control"><option>CHOOSE:</option></select> <qwe></qwe> <span id="args"></span>    
       <div id="r"></div>
@@ -29,9 +29,10 @@
  <script>
    function sh(){
      $("#tohide").hide();
-     $("#toshow").show();  
+     $("#toshow").show();
+     
     };
-   $.getJSON("quest.json",function(operations){
+   $.getJSON($("#gj").val(),function(operations){
        function Calc(){
    //заполнение объекта-калькулятора операциями
         
