@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+	<link href="calc.css" rel="stylesheet" type="text/css"/>
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<!--Fonts-->
+ 	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  
+ <head>
+	<title>Calc</title>
+	<meta charset="utf-8">
+	
+ </head>
+
+ <body>
+ 	<div id="tohide">
+      	<div class="col-md-2 col-md-offset-5">
+		<input id="gj" value='quest.json' class="form-control">
+		<br>
+		<button onclick="sh()" class="btn btn-danger">LOAD</button>
+        </div>
+	</div>
+	<div id = "toshow" class="bgm" style="display:none">
+		<select id="sel" class="form-control"><option>CHOOSE:</option></select> <qwe></qwe> <span id="args"></span>    
+      <div id="r"></div>
+      
+ <script>
+	function sh(){
+   		$.getJSON($("#gj").val(),function(operations){
+          		$("#tohide").hide();
+     	  		$("#toshow").show();
+
+       			function Calc(){
+          			for (key in operations) {this[key] = new Function(operations[key][1]);}
+
+           			this.buildSelect = function(){
+					for (key in operations) {
+                			$("select").append("<option value='" + key + "'>" + operations[key][2] + "</option>");  
+					}             
+           			}
+           			this.buildInputs = function(){
+           	 			var args = operations[$("select").val()][0];
+             				$("#args").html("");
+             				$("qwe").html("ARGUMENTS:");
+
+           	 			for (var i = 0; i < args; i++)
+                				$("#args").append("<input class='ar'>");
+
+                			$("<button>COMPUTE</button>").appendTo("#args").on("click",function(){
+						var vals = $(".ar").map(function(){return $(this).val()}).get(); //получить массив аргументов
+                  				$("#r").html(Calc()[$("select").val()].apply(null, vals)    );
+                  				$("#r").effect("pulsate",1000);
+                  				$("select")[0].selectedIndex = 0; 
+             				});
+           			}
+           			return this;
+         		}
+         		Calc().buildSelect();  
+         		$("select").on("change",  function(){  
+           	  		Calc().buildInputs();
+         		});
+	      	});
+      	};
+  </script>
+  </div>
+ </body>
+</html>

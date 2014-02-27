@@ -1,0 +1,52 @@
+
+
+#sel
+  {
+   padding-left: 45%;
+   background-color:#0A330D;
+   border: 1px solid #17771F;
+   color: #1CB529;
+   font-size:17px;
+  }
+.ar
+ {
+   background: #0A330D;
+   border: 1px solid #17771F;
+   font-size:17px;
+ }
+
+.bgm
+ {
+  font-family: 'Press Start 2P';
+  background-color: #0C330F; 
+  color: #1CB529;
+  font-size:17px;
+  
+  position: absolute;
+  overflow: auto;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+ }
+button
+{
+  border: 1px solid green;
+  background: none;
+}
+
+#r
+{
+  padding-top: 5%;
+  text-align: center;
+  font-size:72px;
+}
+
+
+
+#tohide
+ {
+  float: none;
+  margin-top: 10%;
+  text-align: center;
+ }
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <head>
+  <title>Calculator 1</title>
+  <meta charset="utf-8">
+   <style>body {zoom:120%}</style> 
+ </head>
+ <body>
+   <p>Доработка: интерфейс калькулятора строится программно, и теги option возникают в цикле по массиву operations, JSON выносится в отдельный файл - это уже jQuery</p>
+   <select id="choose"><option>Ваш выбор:</option></select><div id="inp"></div>
+   <script>
+        //<![CDATA[
+     	 //массив операций, могущий быть прочитанным из JSON-файла
+         var operations = {
+                 "plus"		:"var arg = []; arg[0]=arguments[0]+arguments[1];arg[1]=2; return arg", 
+                 "asterisk"	: "var arg = []; arg[0]=arguments[0]-arguments[0];arg[1]=2; return arg",
+                 "progr" :   "var arg = []; arg[0]=(arguments[1]-arguments[0])/arguments[3];arg[1]=3; return arg"
+         };  
+         
+			
+     	 //заполнение объекта-калькулятора операциями
+		  for (k in operations) {               
+				$('#choose').append($("<option value="+k+">"+k+"</option>"));}
+         function Calc(){
+           for (k in operations) {
+                this[k] = new Function(operations[k]);
+				
+           
+           }
+         return this;
+         }
+              
+         document.querySelector("select").addEventListener("change",
+    	   function(){  
+		      
+              /*var n1 = 1;//this.previousSibling.value;
+              var n2 = 2;//this.nextSibling.value;
+              var n3 = 3;*/
+			  //var n = [];
+			  var n = [];
+			  //console.log(n);
+			 /* var n = [];
+			  n[0]=1;
+			  n[1]=2;
+			  n[2]=3;*/
+			  
+               $('#inp').empty();
+             for (var i = 0; i<Calc()[this.value].apply(null, n)[1];i++)
+             	{
+                  $("#inp").append("<input>");
+             	}
+			 var val = this.value;
+			 //console.log(n);
+             $("#inp").append("<button id='cl'>PUSH</button>");
+			 $("#cl").click(function () {
+			 // $('#inp').empty();
+			  console.log( Calc()[val].apply(null, n)[0] );
+			  console.log(val);
+			  n = $("input").map(function(){return $(this).val()}).get();
+			  //console.log(n1);
+			  });
+			  //!http://162.243.149.21/66
+			  //!console.log($("input").map(function(){return $(this).val()}).get())
+			
+              this.selectedIndex = 0;
+           }, true, false);    
+     	//]]>
+   </script>
+ </body>          
+</html>
