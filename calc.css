@@ -49,8 +49,5 @@ body, html
 
 #tohide
  {
-  left: 50%;
-  margin-left: -500px;
-  position: absolute;
-  width: 1000px;
+  margin:10px auto 5px;
  }
