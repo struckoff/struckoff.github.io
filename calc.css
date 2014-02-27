@@ -60,10 +60,10 @@ button
   width:197px;
   word-wrap:break-word;
   color: #ccc
+  margin: 200px;
 }
 
 #tooltip:hover
 {
-
   color: #000
 }
