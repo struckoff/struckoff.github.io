@@ -21,6 +21,12 @@ input
   background-color: #0C330F; 
   color: #1CB529;
   font-size:17px;
+  
+  position: absolute;
+  overflow: auto;
+  margin: 0;
+  width: 100%;
+  height: 100%;
  }
 button
 {
@@ -33,4 +39,10 @@ button
   padding-top: 5%;
   text-align: center;
   font-size:72px;
+}
+
+body, html
+{
+  padding: 0;
+  margin: 0;
 }
