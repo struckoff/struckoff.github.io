@@ -46,3 +46,8 @@ body, html
   padding: 0;
   margin: 0;
 }
+
+#tohide
+ {
+  margin:0 auto;
+ }
