@@ -60,6 +60,7 @@
                 $( "<button>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
+                  vatr revals = vals.slice(1);
                   console.log(vals);
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
                   $("#AC").remove();
