@@ -19,12 +19,17 @@
 	<meta charset="utf-8">
 	
  </head>
-  <body class="bgm" style="display:none">
+  <body id="tohide"><button onlclick="sh()"></button></body>
+  <body id = "toshow" class="bgm" style="display:none">
    <select id="sel" class="form-control"><option>CHOOSE:</option></select> <qwe></qwe> <span id="args"></span>    
       <div id="r"></div>
 
       
- <script>           
+ <script>
+   function sh(){
+     $(#tohide).hide();
+     $(#toshow).show();  
+    }
    $.getJSON("quest.json",function(operations){
        function Calc(){
    //заполнение объекта-калькулятора операциями
