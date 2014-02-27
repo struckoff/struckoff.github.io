@@ -61,10 +61,10 @@
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
                   vatr revals = vals.slice(1);
-                  console.log(vals);
-                  $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
+                  console.log(revals);
+                  $("#r").html(       Calc()[  $("select").val()   ].apply(null, revals)    );
                   $("#AC").remove();
-                  console.log(Calc()[  $("select").val()   ].apply(null, vals));
+                  console.log(Calc()[  $("select").val()   ].apply(null, revals));
                   if  (Calc()[  $("select").val()   ].apply(null, vals) == 18){$("#toshow").append("<div id='AC'>AliceCooper</div>")} 
                   $("#r").effect("pulsate",1000);
                   $("select")[0].selectedIndex = 0; 
