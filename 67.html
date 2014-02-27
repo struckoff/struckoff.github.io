@@ -28,7 +28,7 @@
          
            //заполнение объекта-калькулятора операциями
            this.getOperations = function(){
-               $.get($("#opersrc").val(), function(operations){
+               $.getJSON($("#opersrc").val(), function(operations){
                    for (var k in operations) 
                         self[k] = new Function(operations[k][1]);
                    self.operations = operations;
