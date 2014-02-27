@@ -56,10 +56,10 @@
              
              
            	 for (var i = 0; i < args; i++)
-                $("#args").append("<input>");            
+                $("#args").append("<input class="inpu">");            
                 $( "<button>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
              
-                  var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
+                  var vals = $(".inpu").map(function(){return $(this).val()}).get(); //получить массив аргументов
                   console.log(vals);
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
                   $("#AC").remove();
