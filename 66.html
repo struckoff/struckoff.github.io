@@ -32,7 +32,7 @@
   
    $.getJSON($("#gj").val(),function(operations){
           $("#tohide").hide();
-     $("#toshow").show();
+     	  $("#toshow").show();
      
        function Calc(){
    //заполнение объекта-калькулятора операциями
@@ -60,6 +60,7 @@
                 $( "<button>COMPUTE</button>" ).appendTo( "#args" ).on("click", function(){
              
                   var vals = $("input").map(function(){return $(this).val()}).get(); //получить массив аргументов
+                  console.log(vals);
                   $("#r").html(       Calc()[  $("select").val()   ].apply(null, vals)    );
                   $("#AC").remove();
                   console.log(Calc()[  $("select").val()   ].apply(null, vals));
