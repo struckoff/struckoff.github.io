@@ -50,7 +50,8 @@ button
   text-align: center;
  }
 
-.btn[class="btn"]
+.btn-default[class="btn-default"]
 {
   background-color:green;
+  font-size:1;
 }
