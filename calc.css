@@ -52,6 +52,6 @@ button
 
 button[class="btn-default"]
 {
-  background-color:green;
-  font-size:1;
+  background-color:green !important;
+  font-size:1 !important;
 }
