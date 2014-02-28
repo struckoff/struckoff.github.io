@@ -40,10 +40,10 @@
 	$(".lj").css("color","#aaa");
 	$("#tooltip").hover(
 		function(){
-			$(".lj").css("color","#aaa");
+			$(".lj").css("color",$("#gj").css(["color"]).color);
 			},
 		function(){
-			$(".lj").css("color",$("#gj").css(["color"]).color);
+			$(".lj").css("color","#aaa");
 			}
 	);
 	$(document).ready(function() {
