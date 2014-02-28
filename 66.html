@@ -37,11 +37,11 @@
       <div id="r"></div>
       
  <script>
-	$("#gj").hover(
-		function(event){
-			$(".lj").css("color","#FF0000");},
-		function(event){
-			$(".lj").css("color","#00FF00");}//$("#gj").css(["color"]).color);}
+	$("#gj").mouseenter(
+		function(){
+			$(".lj").css("color","#FF0000")}).mouseleave(
+		function()
+			$(".lj").css("color","#00FF00")}
 	);
 	$(document).ready(function() {
 		window.field = function (s){$("#gj").val(s);};
