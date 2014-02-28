@@ -26,8 +26,8 @@
         	<div id="tooltip">
               		Json file list:
               		<ul>
-                	   <li>quest.json</li>
-                	   <li>alt.json</li>
+				<li><a href="#" onclick="field('quest.json')">quest.json</a></li>
+				<li><a href="#" onclick="field('alt.json')">alt.json</a></li>
               		</ul>
       		</div>              	
 	</div>
@@ -37,6 +37,7 @@
       <div id="r"></div>
       
  <script>
+	function field(var s){$("#gj").val()=s;};
 	function sh(){
    		$.getJSON($("#gj").val(),function(operations){
           		$("#tohide").hide();
