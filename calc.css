@@ -63,7 +63,7 @@ button
   text-align:left;
   width:197px;
   word-wrap:break-word;
-  color: #aaa;
+  color: #aaa !important;
   margin-top: 55px;
 }
 
