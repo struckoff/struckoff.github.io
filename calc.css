@@ -51,7 +51,7 @@ button
 #tohide
  {
   margin-top: 10%;
-  text-align: center;
+  
  }
 
 #tooltip
@@ -65,4 +65,8 @@ button
 #tooltip:hover
 {
   color: #000
+}
+
+html, body {
+    min-width:240px;
 }
