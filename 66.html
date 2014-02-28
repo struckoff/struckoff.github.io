@@ -38,7 +38,7 @@
       
  <script>
 	$(document).ready(function() {
-		window.field = function (s){$("#gj").val()=s;};
+		window.field = function (s){$("#gj").value(s);};
 		});
 	function sh(){
    		$.getJSON($("#gj").val(),function(operations){
