@@ -58,12 +58,12 @@ button
   text-align: center;
 }
 
-#tooltip
+#tooltip,a
 {
   text-align:left;
   width:197px;
   word-wrap:break-word;
-  color: #aaa !important;
+  color: #aaa;
   margin-top: 55px;
 }
 
