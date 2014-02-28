@@ -59,6 +59,7 @@ button
 
 #tooltip
 {
+  text-align:left;
   width:197px;
   word-wrap:break-word;
   color: #ccc;
