@@ -54,7 +54,9 @@ button
   margin-left:41.66666667%;
   width:197px;
   text-align: center;
-  
+}
+#hide
+{
   position: absolute;
   overflow: auto;
   margin: 0;
