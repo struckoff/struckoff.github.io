@@ -65,6 +65,10 @@ button
   color: #ccc;
   margin-top: 55px;
 }
+li
+{
+  padding-left:100px
+}
 
 #tooltip:hover
 {
