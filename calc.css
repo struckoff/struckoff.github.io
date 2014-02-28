@@ -58,7 +58,7 @@ button
   text-align: center;
 }
 
-#tooltip,a
+#tooltip
 {
   text-align:left;
   width:197px;
@@ -70,6 +70,11 @@ button
 #tooltip:hover
 {
   color: #000
+}
+
+a
+{
+ color: inherit;
 }
 
 ui
