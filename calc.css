@@ -60,7 +60,7 @@ button
   position: absolute;
   overflow: auto;
   margin: 0;
-  width: auto;
+  width: device-width;
   height: auto;
  }
 
