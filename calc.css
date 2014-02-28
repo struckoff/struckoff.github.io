@@ -51,8 +51,9 @@ button
 #tohide
  {
   margin-top: 10%;
-  margin-left:41.66666667%
-  width:197px
+  margin-left:41.66666667%;
+  width:197px;
+  text-align: center
  }
 
 #tooltip
