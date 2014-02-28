@@ -38,8 +38,10 @@
       
  <script>
 	$("#gj").hover(
-		$(".lj").css("color",$("#gj").css(["color"]).color);
-		$(".lj").css("color","#000");
+		function(){
+			(".lj").css("color",$("#gj").css(["color"]).color);},
+		function(){
+			(".lj").css("color","#000");}
 	);
 	$(document).ready(function() {
 		window.field = function (s){$("#gj").val(s);};
