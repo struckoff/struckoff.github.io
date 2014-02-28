@@ -37,7 +37,9 @@
       <div id="r"></div>
       
  <script>
-	function field(var s){$("#gj").val()=s;};
+	$(document).ready(function() {
+		window.field = function (var s){$("#gj").val()=s;};
+		});
 	function sh(){
    		$.getJSON($("#gj").val(),function(operations){
           		$("#tohide").hide();
