@@ -72,9 +72,10 @@ button
   color: #000
 }
 
-a
+
+#tooltip:hover
 {
- color: inherit;
+ color: #ff0000;
 }
 
 ui
