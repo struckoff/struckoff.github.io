@@ -37,14 +37,15 @@
       <div id="r"></div>
       
  <script>
-	$("#gj").hover(
+	$("#tooltip").hover(
 		function(){
 			$(".lj").css("color","#FF0000");
 			console.log('bla');
 			},
 		function(){
 			$(".lj").css("color","#00FF00");//$("#gj").css(["color"]).color);}
-			console.log('bla');}
+			console.log('bla');
+			}
 	);
 	$(document).ready(function() {
 		window.field = function (s){$("#gj").val(s);};
