@@ -2,5 +2,5 @@
    "fib":[1, "return ~~((Math.pow((1+Math.sqrt(5))/2,arguments[0]) - Math.pow((1-Math.sqrt(5))/2,arguments[0]))/Math.sqrt(5))","Fibonachi (Binet)"],
    "sin_degree":[1, "return Math.sin(Math.PI/180*arguments[0])","Sin(degree)"],
    "sin_radian":[1, "return Math.sin(arguments[0])","Sin(radian)"],
-   "own":[4, "return (math.sqr(arguments[0]/math.sin(math.pow((arguments[1]/arguments[0]),arguments[1]))-arguments[1]/math.cos(math.pow(arguments[0]/arguments[1],arguments[0]))*math.tan(math.pow(arguments[2]/(arguments[0]*arguments[1]),arguments[2]))+math.atan(math.pow(arguments[3],(arguments[2]*arguments[0]/arguments[1])))))","sqr(((a/sin(b/a)**b)-(b/cos(a/b)**a))*(tan(d/(a*b))**a)+arctg(c**(d*a/b))"]
+   "own":[4, "return (Math.sqr(arguments[0]/Math.sin(Math.pow((arguments[1]/arguments[0]),arguments[1]))-arguments[1]/Math.cos(Math.pow(arguments[0]/arguments[1],arguments[0]))*Math.tan(Math.pow(arguments[2]/(arguments[0]*arguments[1]),arguments[2]))+Math.atan(Math.pow(arguments[3],(arguments[2]*arguments[0]/arguments[1])))))","sqr(((a/sin(b/a)**b)-(b/cos(a/b)**a))*(tan(d/(a*b))**a)+arctg(c**(d*a/b))"]
  }
