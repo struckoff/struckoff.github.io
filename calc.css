@@ -11,7 +11,7 @@ body,html
    color: #1CB529;
    font-size:17px;
    text-align: center;
-   word-wrap:break-word;
+ 
    
 }
   #sel:focus{  
@@ -78,3 +78,7 @@ ui
   padding-left:100px
 }
 
+#copyright
+{
+ margin-top:95%;
+}
