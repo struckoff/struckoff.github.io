@@ -11,6 +11,7 @@ body,html
    color: #1CB529;
    font-size:17px;
    text-align: center;
+  word-wrap:break-word;
 }
   #sel:focus{  
     box-shadow: 0 0 0px #00FF00 !important;
@@ -29,7 +30,6 @@ body,html
   background-color: #0C330F; 
   color: #1CB529;
   font-size:17px;
-  
   position: absolute;
   overflow: auto;
   margin: 0;
