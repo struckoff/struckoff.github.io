@@ -11,7 +11,8 @@ body,html
    color: #1CB529;
    font-size:17px;
    text-align: center;
-  word-wrap:break-word;
+   word-wrap:break-word;
+   height: 10px;
 }
   #sel:focus{  
     box-shadow: 0 0 0px #00FF00 !important;
