@@ -12,7 +12,7 @@ body,html
    font-size:17px;
    text-align: center;
    word-wrap:break-word;
-   height: 10px;
+   height: 100%;
 }
   #sel:focus{  
     box-shadow: 0 0 0px #00FF00 !important;
