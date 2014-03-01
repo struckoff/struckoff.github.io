@@ -80,5 +80,6 @@ ui
 
 #copyright
 {
- margin-top:95%;
+ position: absolute;
+ bottom: 0;
 }
