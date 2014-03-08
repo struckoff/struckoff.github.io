@@ -45,7 +45,9 @@ html{
       	background: rgba(0,0,0,0.7);
      }
 .flexbox-head {
-	align-items:flex-start;
+	#align-items:flex-start;
+	position:absolute;
+	top:0;
       	padding: 10px;
       	border: 1px solid ;
       	border-color: rgba(41, 45, 42, 0.5);
