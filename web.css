@@ -46,7 +46,7 @@ html{
      }
 .flexbox-head {
 	#align-items:flex-start;
-	position:absolute;
+	#position:absolute;
 	top:0;
       	padding: 10px;
       	border: 1px solid ;
