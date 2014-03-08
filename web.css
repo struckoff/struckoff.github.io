@@ -45,9 +45,7 @@ html{
       	box-shadow: 0 0 3px rgba(0,0,0,0.5);
       	background: rgba(0,0,0,0.7);
      }
-.flexbox-head {
-	#align-items:flex-start;
-	#position:absolute;
+.head {
 	height:200px;
 	top:0;
       	padding: 10px;
