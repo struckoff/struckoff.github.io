@@ -33,6 +33,11 @@ html{
 	flex-direction:row;
 	justify-content:center;
 	align-items:center;
+	position: absolute;
+    	top: 0px;
+    	left: 0px;
+    	bottom: 0px;
+    	right: 0px;
 }
 .flexbox {
       	padding: 10px;
