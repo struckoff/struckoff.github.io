@@ -27,9 +27,10 @@
 	</body>
 
 	<script>
-		var i = 1;
+		var i = 0;
 		$.getJSON('proj.json',function(proj){
 				$.each(proj,function(key,val){
+					i++;
 					$('.flexbox-cont').append("<div class='flexbox'><p align='left'><span class='text'>"+i+": </span><a href='"+val[0]+"' class = link>"+val[1]+"</a></p></div>");
 					});
 				});	
