@@ -49,6 +49,8 @@ html{
 	height:200px;
 	top:0;
       	padding: 10px;
+	}
+.head-p{
       	border: 1px solid ;
       	border-color: rgba(41, 45, 42, 0.5);
       	box-shadow: 0 0 3px rgba(0,0,0,0.5);
