@@ -28,8 +28,8 @@ html{
 
 .flexbox-cont{
 	display:flex;
-	flex-direction:row;
-	justify-content:center;
+	flex-direction:column;
+	#justify-content:center;
 	align-items:center;
 	position: absolute;
     	top: 200px;
@@ -49,8 +49,10 @@ html{
 	height:200px;
 	top:0;
       	padding: 10px;
+	width:300px
 	}
 .head-p{
+	margin-top 3px;
 	padding-top:10px;
       	border: 1px solid ;
       	border-color: rgba(41, 45, 42, 0.5);
