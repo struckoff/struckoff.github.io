@@ -31,10 +31,10 @@ html{
 	flex-direction:row;
 	justify-content:center;
 	align-items:center;
-	#position: absolute;
-    	#top: 0px;
+	position: absolute;
+    	top: 200px;
     	left: 0px;
-    	#bottom: 0px;
+    	bottom: 0px;
     	right: 0px;
 	height:100%;
 }
@@ -48,6 +48,7 @@ html{
 .flexbox-head {
 	#align-items:flex-start;
 	#position:absolute;
+	height:200px;
 	top:0;
       	padding: 10px;
       	border: 1px solid ;
