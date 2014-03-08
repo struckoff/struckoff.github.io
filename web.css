@@ -51,7 +51,7 @@ html{
       	padding: 10px;
 	}
 .head-p{
-	top:10px;
+	padding-top:10px;
       	border: 1px solid ;
       	border-color: rgba(41, 45, 42, 0.5);
       	box-shadow: 0 0 3px rgba(0,0,0,0.5);
