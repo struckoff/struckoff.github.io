@@ -1,48 +1,42 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>Test your mind</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+.<!DOCTYPE html>
+<html>
+ <head>
+  <title>HTML5 JQuery AJAX</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+	$.getJSON('qusetions.json',function(quest){
+			$.each('quest',function(key,value){
+				$("body").append('<div class = "q">'+value[0]+'</div>');
+				var id = 0;
+				$("body").append('<selct></select>');
+				for (ans in value[1]){
+					var s = '#'+key;
+					$(s).append('<option class = "a" value="'+id+'">'+ans+'</option>');
+					if (id == value[2]) console.log('right');
+					}
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </script>
+ </head>
+ <body>
+   <h1 style="position: relative;">Кликните, чтобы начать тест.</h1>
+    <p></p>
+<div id="box"></div>
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="skeleton/stylesheets/base.css">
-	<link rel="stylesheet" href="skeleton/stylesheets/skeleton.css">
-	<link rel="stylesheet" href="skeleton/stylesheets/layout.css">
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script>
+function prog(b){
+var a=document.getElementById('prog2') ;
+a.style.left= b+"%";
+var b1=100-b;
+a.style.width=b1-0.25+"%";
+}
+</script>
+ 
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="skeleton/images/favicon.ico">
-	<link rel="apple-touch-icon" href="skeleton/images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="skeleton/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="skeleton/images/apple-touch-icon-114x114.png">
-
-</head>
-<body>
-<div class="container">
- <div class="sixteen columns">
-    <h1>Full Width Column</h1>
-    <div class = 'row'>
-    	<div class='ten columns alpha' style='background:red'>redredredredredredredredredred</div>
-    	<div class='six columns omega' style='background:green'>greeeeeeeeeeeeeeeeeeeeeeeeeen</div>
-    </div>
-  </div>
-</div>
 </body>
 </html>
