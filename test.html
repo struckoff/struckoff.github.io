@@ -8,7 +8,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
 	$.getJSON('questions.json',function(quest){
-			$.each('quest',function(key,value){
+			$.each(quest,function(key,value){
 				$("body").append('<div class = "q">'+value[0]+'</div>');
 				var id = 0;
 				$("body").append('<selct id="'+key+'"></select>');
