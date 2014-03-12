@@ -12,7 +12,9 @@
 				$("body").append('<div class = "q">'+value[0]+'</div>');
 				var id = 0;
 				$("body").append('<selct id="'+key+'"></select>');
+				console.log("key:"+key+"value"_value)
 				for (ans in value[1]){
+				console.log("ans: "+ans)
 					id++;
 					var s = '#'+key;
 					$(s).append('<option class = "a" value="'+id+'">'+ans+'</option>');
