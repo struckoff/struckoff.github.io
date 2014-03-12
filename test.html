@@ -11,8 +11,9 @@
 			$.each('quest',function(key,value){
 				$("body").append('<div class = "q">'+value[0]+'</div>');
 				var id = 0;
-				$("body").append('<selct></select>');
+				$("body").append('<selct id="'+key+'"></select>');
 				for (ans in value[1]){
+					id++;
 					var s = '#'+key;
 					$(s).append('<option class = "a" value="'+id+'">'+ans+'</option>');
 					if (id == value[2]) console.log('right');
@@ -23,7 +24,7 @@
   </script>
  </head>
  <body>
-   <h1 style="position: relative;">Кликните, чтобы начать тест.</h1>
+   <h1 style="position: relative;">РљР»РёРєРЅРёС‚Рµ, С‡С‚РѕР±С‹ РЅР°С‡Р°С‚СЊ С‚РµСЃС‚.</h1>
     <p></p>
 <div id="box"></div>
 
