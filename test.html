@@ -9,9 +9,9 @@
   <script>
 	$.getJSON('questions.json',function(quest){
 			$.each(quest,function(key,value){
-				$("body").append('<div class = "q">'+value[0]+'</div>');
+				$("#box").append('<div class = "q">'+value[0]+'</div>');
 				var id = 0;
-				$("body").append('<selct id="'+key+'"><option>BLA</option></select>');
+				$("#box").append('<selct id="'+key+'"><option>BLA</option></select>');
 
 				console.log("key:"+key+" Value"+value);
 				console.log("[0] "+value[0]);
