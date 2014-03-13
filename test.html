@@ -24,7 +24,7 @@
 						var s = '#'+key;
 						$(s).append('<option class = "a" value="'+id+'">'+ans+'</option>');
 					});
-					$("#nl").append("if ($('#"+key+"').val() =="+ value[2]  +") console.log('right');");
+					$("#nl").append("$('#"+key+"').change(if {($('#"+key+"').val() =="+ value[2]  +") console.log('right'));}");
 						
 				});
 			});
