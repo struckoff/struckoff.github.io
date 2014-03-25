@@ -20,7 +20,7 @@
  <button type="submit">PUSH IT</button>
  </form>
 
-
+<div>
   <?php
 	header('Content-Type: text/html; charset=utf-8');
 	if (isset($_GET["op1"]) and isset($_GET["op2"]) and isset($_GET["chose"]))
@@ -67,6 +67,7 @@
 	}*/
 
 ?>
+	</div>
 </div>
  </body>
 </html>
