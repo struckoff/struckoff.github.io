@@ -1,5 +1,7 @@
  {
                  "calc"		:	["http://struckoff.github.io/calc/calc", "Калькулятор"],
-                 "calc-php" :["http://struckoff.url.ph/php/calc-php/","Калькулятор (PHP)"]
+                 "calc-php" :["http://struckoff.url.ph/php/calc-php/","Калькулятор (PHP)"],
+                  'POST':["https://asciinema.org/a/9118","POST (Скринкаст)"],
+                    "GET":["https://asciinema.org/a/9119","GET (Скринкаст)"]   
                                 
  }
