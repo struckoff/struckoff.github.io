@@ -4,6 +4,6 @@
                  "post"		:	["https://asciinema.org/a/9118","POST (Скринкаст)"],
                  "get"		:	["https://asciinema.org/a/9119","GET (Скринкаст)"],
                  "hash"		:	["http://struckoff.url.ph/php/md5-php/","HASH"],
-                   "auth"	:	["","Авторизация/Регистрация"]
+                   "auth"	:	["http://struckoff.url.ph/php/cookie-php/login.php","Авторизация/Регистрация"]
                                 
  }
