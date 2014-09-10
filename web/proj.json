@@ -1,10 +1,10 @@
  {
-                 "calc"		:	["http://struckoff.github.io/calc/calc", "Калькулятор"],
-                 "calc-php" :	["http://struckoff.url.ph/php/calc-php/","Калькулятор (PHP)"],
-                 "post"		:	["https://asciinema.org/a/9118","POST (Скринкаст)"],
-                 "get"		:	["https://asciinema.org/a/9119","GET (Скринкаст)"],
-                 "hash"		:	["http://struckoff.url.ph/php/md5-php/","HASH (С выбором вариантов)"],
-                   "auth"	:	["http://struckoff.url.ph/php/cookie-php/login.php","Авторизация/Регистрация/Captcha"],
-                     "VKapp" : ["http://vk.com/app4390308_21471652","VKapp (только HTTP !)"]
-                                
+ 	"calc"		:	["http://struckoff.github.io/calc/calc", "Калькулятор"],
+ 	"calc-php" 	:	["http://struckoff.url.ph/php/calc-php/","Калькулятор (PHP)"],
+ 	"post"		:	["https://asciinema.org/a/9118","POST (Скринкаст)"],
+ 	"get"		:	["https://asciinema.org/a/9119","GET (Скринкаст)"],
+ 	"hash"		:	["http://struckoff.url.ph/php/md5-php/","HASH (С выбором вариантов)"],
+ 	"auth"		:	["http://struckoff.url.ph/php/cookie-php/login.php","Авторизация/Регистрация/Captcha"],
+ 	"VKapp" 	:	["http://vk.com/app4390308_21471652","VKapp (только HTTP !)"]
+
  }
