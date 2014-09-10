@@ -1,99 +1,93 @@
 
 <META http-equiv=content-type content="text/html; charset=UTF-8">
-<!doctype html>
-<html lang="en">
-<head>	
+  <!doctype html>
+  <html lang="en">
+  <head>	
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
   	<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
-	<!-- Foundation -->
-    <link rel="stylesheet" href="http://struckoff.url.ph/foundation/css/foundation.css" />
-    <script src="http://struckoff.url.ph/foundation/js/vendor/modernizr.js"></script>
-  	<!--Bootstrap-->
-	<link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
-	<script src="/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-  
-	<meta charset="UTF-8">
-	<title>CSS Framework example</title>
-</head>
-<body>
- <div class="row">
-
-<div class="large-6 columns">
-<form data-abide>
-  <div class="name-field">
-    <label>Your name <small>required</small>
-      <input type="text" required pattern="[a-zA-Z]+">
-    </label>
-    <small class="error">Name is required and must be a string.</small>
-  </div>
-  <div class="phone">
-    <label>Your phone number <small>required</small>
-      <input type="text" required pattern="\+?\d+">
-    </label>
-    <small class="error">Valide phone number required.</small>
-  </div>
-  <div class="email-field">
-    <label>Email <small>required</small>
-      <input type="email" required>
-    </label>
-    <small class="error">An email address is required.</small>
-  </div>
-  <button type="submit">Submit</button>
-</form>
-  </div>
+   <!-- Foundation -->
+   <link rel="stylesheet" href="http://struckoff.url.ph/foundation/css/foundation.css" />
+   <script src="http://struckoff.url.ph/foundation/js/vendor/modernizr.js"></script>
+   <!--Bootstrap-->
+   <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
+   <script src="/bootstrap/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+   
+   <meta charset="UTF-8">
+   <title>CSS Framework example</title>
+ </head>
+ <body>
+   <div class="row">
     <div class="large-6 columns">
-<form class="form-horizontal">
-<fieldset>
+      <form data-abide>
+        <div class="name-field">
+          <label>Your name <small>required</small>
+            <input type="text" required pattern="[a-zA-Z]+">
+          </label>
+          <small class="error">Name is required and must be a string.</small>
+        </div>
+        <div class="phone">
+          <label>Your phone number <small>required</small>
+            <input type="text" required pattern="\+?\d+">
+          </label>
+          <small class="error">Valide phone number required.</small>
+        </div>
+        <div class="email-field">
+          <label>Email <small>required</small>
+            <input type="email" required>
+          </label>
+          <small class="error">An email address is required.</small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="large-6 columns">
+      <form class="form-horizontal">
+        <fieldset>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-8 control-label" for="name">Name</label>  
+            <div class="col-md-8">
+              <input id="name" name="name" type="text" placeholder="name here" class="form-control input-md" required="">
+            </div>
+          </div>
 
-<!-- Form Name -->
-<legend>Form Name</legend>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-8 control-label" for="phone">Phone number</label>  
+            <div class="col-md-8">
+              <input id="phone" name="phone" type="text" placeholder="num pls" class="form-control input-md" required="[0-9]+">
+              
+            </div>
+          </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-8 control-label" for="name">Name</label>  
-  <div class="col-md-8">
-  <input id="name" name="name" type="text" placeholder="name here" class="form-control input-md" required="">
-    
-  </div>
-</div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-8 control-label" for="male">EMale</label>  
+            <div class="col-md-8">
+              <input id="male" name="male" type="text" placeholder="adress here" class="form-control input-md" required="">
+              
+            </div>
+          </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-8 control-label" for="phone">Phone number</label>  
-  <div class="col-md-8">
-  <input id="phone" name="phone" type="text" placeholder="num pls" class="form-control input-md" required="[0-9]+">
-    
-  </div>
-</div>
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="sub"></label>
+            <div class="col-md-4">
+              <button id="sub" name="sub" class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-8 control-label" for="male">EMale</label>  
-  <div class="col-md-8">
-  <input id="male" name="male" type="text" placeholder="adress here" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="sub"></label>
-  <div class="col-md-4">
-    <button id="sub" name="sub" class="btn btn-primary" type="submit">Submit</button>
-  </div>
-</div>
-
-</fieldset>
-</form>
-</div>
+        </fieldset>
+      </form>
+    </div>
   </div>  
   
 </body>
 </html>
-	  <script src="http://struckoff.url.ph/foundation/js/vendor/jquery.js"></script>
-	  <script src="http://struckoff.url.ph/foundation/js/foundation.min.js"></script>
-	  <script>$(document).foundation();</script>
+<script src="http://struckoff.url.ph/foundation/js/vendor/jquery.js"></script>
+<script src="http://struckoff.url.ph/foundation/js/foundation.min.js"></script>
+<script>$(document).foundation();</script>
 
 <style>
   html,body{font-size:100% !important;}
