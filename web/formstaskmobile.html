@@ -1,0 +1,103 @@
+<META http-equiv=content-type content="text/html; charset=UTF-8">
+	<!doctype html>
+	<html lang="en">
+	<head>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+		<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+		<!-- Foundation -->
+		<link rel="stylesheet" href="http://struckoff.url.ph/foundation/css/foundation.css" />
+		<script src="http://struckoff.url.ph/foundation/js/vendor/modernizr.js"></script>
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
+		<script src="/bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+
+		<meta charset="UTF-8">
+		<title>CSS Framework example</title>
+	</head>
+	<body>
+		<div class="row " style="max-width : 100%">
+			<div class="large-10 small-centered columns">
+				<div class="large-6 columns">
+					<h1 class="subheader">Foundation</h1>
+					<form data-abide>
+						<div class="name-field">
+							<label>Your name <small>required</small>
+								<input type="text" required pattern="[a-zA-Z]+">
+							</label>
+							<small class="error">Name is required and must be a string.</small>
+						</div>
+						<div class="phone">
+							<label>Your phone number <small>required</small>
+								<input type="text" required pattern="\+?\d+">
+							</label>
+							<small class="error">Valide phone number required.</small>
+						</div>
+						<div class="email-field">
+							<label>Email <small>required</small>
+								<input type="email" required>
+							</label>
+							<small class="error">An email address is required.</small>
+						</div>
+						<button type="submit" class="ui-btn">Submit</button>
+					</form>
+				</div>
+				<div class="large-6 columns">
+					<h1 class="subheader">Bootstrap</h1>
+					<form class="form-horizontal">
+						<fieldset>
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-12 control-label" for="name">Name</label>  
+								<div class="col-md-12">
+									<input id="name" name="name" type="text" placeholder="name here" class="form-control input-md" required="">
+								</div>
+							</div>
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-12 control-label" for="phone">Phone number</label>  
+								<div class="col-md-12">
+									<input id="phone" name="phone" type="text" placeholder="num pls" class="form-control input-md" required="[0-9]+">
+
+								</div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-12 control-label" for="male">EMale</label>  
+								<div class="col-md-12">
+									<input id="male" name="male" type="text" placeholder="adress here" class="form-control input-md" required="">
+
+								</div>
+							</div>
+
+							<!-- Button -->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="sub"></label>
+								<div class="col-md-4">
+									<button id="sub" name="sub" class="btn btn-primary ui-btn" type="submit">Submit</button>
+								</div>
+							</div>
+
+						</fieldset>
+					</form>
+				</div>
+			</div>  
+		</div>  
+
+	</body>
+	<script src="http://struckoff.url.ph/foundation/js/vendor/jquery.js"></script>
+	<script src="http://struckoff.url.ph/foundation/js/foundation.min.js"></script>
+	<script>$(document).foundation();</script>
+
+	<style>
+		html,body{font-size:100% !important;}
+		label{width:100%;}
+	</style>
+	<script>
+		// $( "[type='submit']" ).button();
+	</script>
+	</html>
