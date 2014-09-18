@@ -9,6 +9,11 @@
 <body>
 	<div ng-controller="zerocontrol as z" id="cont">
 		<div ng-repeat="obj in z.objs" class="item">
+			<p class ="title main">Title</p>
+			<p class ="id main">Id</p>
+			<p class ="cont main">Content</p>
+		</div>
+		<div ng-repeat="obj in z.objs" class="item">
 			<p class ="title">{{obj.title}}</p>
 			<p class ="id">{{obj.id}}</p>
 			<p class ="cont">{{obj.cont}}</p>
