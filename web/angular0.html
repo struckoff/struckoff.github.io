@@ -39,26 +39,13 @@
 </style>
 
 <script>
-
- // var jso = angular.fromJson('angular0.json');
-
-var objs = 
-    [
-        {
-            "title": "object 0",
-            "id": 0,
-            "cont": "description 0"
-        },
-        {
-            "title": "object 1",
-            "id": 1,
-            "cont": "description 1"
-        }
-    ];
-
 	var app = angular.module('angular0',[]);
-	app.controller('zerocontrol', function(){
-		this.objs = objs;
+	app.controller('zerocontrol', function($scope, $http){
+		self = this;
+		$http.get('angular0.json')
+			.then(function(res){
+				self.objs = res.data;
+			});
 	});
 </script>
 
