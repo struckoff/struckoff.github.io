@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div ng-controller="zerocontrol as z" id="cont">
-		<div class="item">
+		<div class="item main">
 			<p class ="title main">Title</p>
 			<p class ="id main">Id</p>
 			<p class ="cont main">Content</p>
@@ -25,6 +25,14 @@
 	div.item{
 		display: flex;
 		justify-content:space-around;
+	}
+	div.main{
+		background: gray;
+	}
+	.main{
+		font-weight: bold;
+		text-align: center;
+		
 	}
 
 </style>
