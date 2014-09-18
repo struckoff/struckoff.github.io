@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head ng-app="angular0">
 	<meta charset="UTF-8">
 	<title>Angular 0 Struckov Alexey</title>
 
 	<script src="../angular.js"></script>
 </head>
 <body>
-	
+	<div ng-controller="zerocontrol" id="cont">
+		<div ng-repeat="obj in zerocontrol.objs">
+			<p class ="title">{{obj.title}}</p>
+			<p class ="id">{{obj.id}}</p>
+			<p class ="cont">{{obj.cont}}</p>
+		</div>
+	</div>
 </body>
+
+<script>
+	objs = [{
+		'title':1,
+		'id':2,
+		'cont':3
+	}];
+
+	var app = angular.module('angular0',[]);
+	app.controller('zerocontrol', ['', function(){
+		this.objs = objs;
+	}]);
+</script>
+
 </html>
